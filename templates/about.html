@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Your Name</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/portfolio">Portfolio</a></li>
+                <li><a href="/blog">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="about-me">
+        <h1>About Me</h1>
+        <div class="profile-image">
+            <img src="{{ url_for('static', filename='profile.jpg') }}" alt="Your Name">
+        </div>
+        <div class="bio">
+            <p>Welcome to my personal website!</p>
+            <p>I'm Your Name, a robotics and automation enthusiast with a passion for technology.</p>
+            <p>With a background in postgraduate studies in robotics and automation, I'm dedicated to exploring the intersection of deep learning, audio technology, and programming.</p>
+            <p>Feel free to explore my projects, read my blog posts, and connect with me!</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Your Name</p>
+    </footer>
+</body>
+</html>
